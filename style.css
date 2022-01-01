@@ -1,0 +1,154 @@
+body,
+html {
+    min-height: 100vh;
+    min-width: auto;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+header,
+.sub-head,
+footer {
+    display: flex;
+    background-color: #1F2937;
+    color: white
+}
+
+
+header {
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 64px;
+}
+
+button {
+    padding: 7px 30px;
+    text-decoration: none;border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex: auto;
+    gap: 32px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-head {
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    padding-bottom: 128px;
+}
+
+.sub-head section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sub-head img {
+    max-width: 400px;
+    max-height: auto;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 128px;
+    align-items: center;
+}
+
+main .content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.content ul {
+    display: flex;
+}
+
+main .quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 10%;
+    background-color: #E5E7EB;
+}
+
+.quote p {
+    font-size: 36px;
+    opacity: .7;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+.quote h6 {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    align-self: flex-end;
+}
+
+main .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex: none;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.action h3,
+.action p {
+    padding: 0;
+    margin: 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: auto;
+    flex: none;
+}
+
+li,
+.sub-head p,
+h7
+ {
+   font-size: 18px;
+   color: #E5E7EB 
+}
+
+.image-list img {
+    width: 125px;
+    height: auto;
+}
+
+
+
+.action,
+button {
+    color: white;
+    background-color: #3882F6;
+}
+
+
+.action button {
+    border: 2px solid white;
+}
