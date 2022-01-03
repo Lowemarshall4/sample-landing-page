@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body,
 html {
     min-height: 100vh;
@@ -5,13 +10,14 @@ html {
 }
 
 body {
+    margin: 0;
     display: flex;
     flex-flow: column nowrap;
-
+    justify-content: space-between;
 }
 
 header,
-.sub-head,
+.sub-header,
 footer {
     display: flex;
     background-color: #1F2937;
@@ -19,10 +25,44 @@ footer {
 }
 
 
+
 header {
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-bottom: 75px;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    
+}
+
+.sub-header {
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 64px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 2%;
+}
+
+
+.sub-header section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 300px;
+    gap: 10px;
+}
+
+section h1 {
+    max-width: 250px;
+}
+
+.sub-header img {
+    max-width: 400px;
+    max-height: auto;
 }
 
 button {
@@ -38,29 +78,11 @@ button {
     flex: auto;
     gap: 32px;
     justify-content: space-between;
+    align-self: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
-.sub-head {
-    align-items: center;
-    justify-content: center;
-    padding: 0 10%;
-    padding-bottom: 128px;
-}
-
-.sub-head section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.sub-head img {
-    max-width: 400px;
-    max-height: auto;
-}
-
 
 main {
     display: flex;
@@ -73,10 +95,40 @@ main {
 main .content {
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .content ul {
     display: flex;
+}
+
+.content li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.content h2 {
+    margin-bottom: 5%;
+}
+
+.image-list img {
+    width: 125px;
+    height: auto;
+    height: 125px;
+    border: 6px solid #3882F6;
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.image-list p {
+    font-size: 18px;
+    color: #1F2937;
+    text-align: center;
 }
 
 main .quote {
@@ -84,16 +136,20 @@ main .quote {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: stretch;
     padding: 6% 10%;
     background-color: #E5E7EB;
+    flex: auto;
 }
 
 .quote p {
     font-size: 36px;
-    opacity: .7;
     font-style: italic;
+    color: #1F2937;
+    font-weight: 100;
     padding: 0;
     margin: 0;
+    max-width: 1000px;
 }
 .quote h6 {
     font-size: 18px;
@@ -106,18 +162,15 @@ main .action {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    align-self: center;
-    flex: none;
-    padding: 32px;
-    border-radius: 8px;
+    align-self: stretch;
+    flex: auto;
+    gap: 200px;
+    padding-bottom: 3.5%;
+    padding-top: 3.5%;
+    margin-bottom: 48px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
-
-.action h3,
-.action p {
-    padding: 0;
-    margin: 0;
-}
-
 
 footer {
     display: flex;
@@ -128,18 +181,12 @@ footer {
 }
 
 li,
-.sub-head p,
+.sub-header p,
 h7
  {
    font-size: 18px;
    color: #E5E7EB 
 }
-
-.image-list img {
-    width: 125px;
-    height: auto;
-}
-
 
 
 .action,
